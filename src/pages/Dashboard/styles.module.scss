@@ -1,0 +1,116 @@
+// ========== DASHBOARD PAGE MODULE STYLES ========== //
+
+.dashboardContainer {
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #4f46e5;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.walletDetails {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 2rem 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #ececec;
+}
+.detailRow:last-child {
+  border-bottom: none;
+}
+.label {
+  color: #3730a3;
+  font-weight: 600;
+}
+.value {
+  color: #222;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1.1rem;
+}
+.error {
+  color: #b91c1c;
+  background: #fff0f0;
+  border: 1px solid #fca5a5;
+  border-radius: 0.8rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logoutButton {
+  background: #b91c1c;
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(185,28,28,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-bottom: 1.5rem;
+}
+.logoutButton:hover, .logoutButton:focus {
+  background: #991b1b;
+  box-shadow: 0 4px 16px rgba(185,28,28,0.15);
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .walletDetails {
+    padding: 1.2rem 0.7rem;
+    max-width: 95vw;
+  }
+  .detailRow {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+}

@@ -1,0 +1,142 @@
+// ========== CONNECT WALLET PAGE MODULE STYLES ========== //
+
+.connectWalletContainer {
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #4f46e5;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.15rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  max-width: 500px;
+}
+
+.walletList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.walletButton {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1.1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+  outline: none;
+  justify-content: flex-start;
+  position: relative;
+}
+.walletButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.walletButton:hover:not(:disabled), .walletButton:focus:not(:disabled) {
+  border: 1.5px solid #4f46e5;
+  box-shadow: 0 4px 16px rgba(79,70,229,0.12);
+  background: #f3f4f6;
+}
+
+.walletIcon {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.walletName {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+.connecting {
+  color: #4f46e5;
+  font-size: 1rem;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.noWallets {
+  color: #b91c1c;
+  background: #fff0f0;
+  border: 1px solid #fca5a5;
+  border-radius: 0.8rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.error {
+  color: #b91c1c;
+  background: #fff0f0;
+  border: 1px solid #fca5a5;
+  border-radius: 0.8rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .walletList {
+    max-width: 95vw;
+    gap: 1rem;
+  }
+  .walletButton {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+}
