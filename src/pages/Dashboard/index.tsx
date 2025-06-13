@@ -59,16 +59,22 @@ const Dashboard = () => {
       <button onClick={handleLogout} className={styles.logoutButton} style={{alignSelf: 'flex-end', margin: '1rem 2rem 0 0'}}>Logout</button>
       {error && <div className={styles.error}>{error}</div>}
       {!error && (
-        <div className={styles.walletDetails}>
-          <div className={styles.detailRow}>
-            <span className={styles.label}>Account:</span>
-            <span className={styles.value}>{account}</span>
+        <>
+          <div className={styles.walletDetails}>
+            <div className={styles.detailRow}>
+              <span className={styles.label}>Account:</span>
+              <span className={styles.value}>{account}</span>
+            </div>
+            <div className={styles.detailRow}>
+              <span className={styles.label}>Balance:</span>
+              <span className={styles.value}>{balance} ETH</span>
+            </div>
           </div>
-          <div className={styles.detailRow}>
-            <span className={styles.label}>Balance:</span>
-            <span className={styles.value}>{balance} ETH</span>
+          <div className={styles.dashboardActions}>
+            <button onClick={() => navigate('/make-request')} className={styles.actionButton}>Request</button>
+            <button onClick={() => navigate('/pendings')} className={styles.actionButton}>Pendings</button>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

@@ -33,7 +33,7 @@ const HomePage = () => {
           <p className={styles.getStartedDescription}>
             To start using EthPay, you need to connect your Ethereum wallet. Click the button below to connect.
           </p>
-          <button className={styles.connectButton} onClick={() => navigate('/connectWallet')}>
+          <button className={styles.connectButton} onClick={() => navigate('/connect-wallet')}>
             Connect Wallet
           </button>
         </section>
