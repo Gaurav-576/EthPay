@@ -1,4 +1,4 @@
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import styles from './styles.module.scss';
 
 // Example hardcoded data (replace with real fetch logic)
